@@ -1,0 +1,11 @@
+body {
+    background-color: aliceblue;
+}
+.link{
+    text-align: center;
+    margin:100px;
+    padding: 10px;
+    border: solid black 4px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
