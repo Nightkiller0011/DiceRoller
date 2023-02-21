@@ -5,12 +5,7 @@ body{
     color: black;
     
 }
-/* #stat_zone{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
 
-} */
 h1{
     text-align: center;
 }
@@ -69,3 +64,41 @@ h1{
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
   
+  @media screen and (max-width: 775px) {
+    .stat{
+        font-size: 15px;
+    }
+    #stat_zone{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    #Str_zone{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #Dex_zone{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #Con_zone{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #Int_zone{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #Wis_zone{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #Cha_zone{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #Non_zone {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+  }
