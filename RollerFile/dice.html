@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/dice.css">
+    <title>Dice</title>
+</head>
+<body>
+        <h1>Welcome to Dice Roller!</h1>
+        <div class="question">
+            <label for="diceCount">How many Dice are being rolled:</label>
+            <input type="text" id="diceCount" name="diceCount"><br><br>
+            <label for="level">What is Your Combined Level:</label>
+            <input type="number" id="level" name="level" min="1" max="20">
+        </div>
+
+
+
+        <!-- Current Work area -->
+        <form>
+        <section class="zone" id="stat_zone">
+            <div class="stat" id="Str_zone">
+                <p>Strength</p>
+                <input id="str" type="radio" name="mod_box" value="strength">
+                <input type="number" min="8" max="20" class="stat_quantity" id="str_stat">
+                <p class="stat_modifier" id="str_mod"></p>
+            </div>  
+            <div class="stat" id="Dex_zone">
+                <p>Dexterity</p>
+                <input id="dex" type="radio" name="mod_box" value="dexterity">
+                <input type="number" min="8" max="20" class="stat_quantity" id="dex_stat"></p>
+                <p class="stat_modifier" id="dex_mod"></p>
+            </div>  
+            <div class="stat" id="Con_zone">
+                <p>Constitution</p>
+                <input id="con" type="radio" name="mod_box" value="constitution">
+                <input type="number" min="8" max="20" class="stat_quantity" id="con_stat"></p>
+                <p class="stat_modifier" id="con_mod"></p>
+            </div>  
+            <div class="stat" id="Int_zone">
+                <p>Intelligence</p>
+                <input id="int" type="radio" name="mod_box" value="intelligence">
+                <input type="number" min="8" max="20" class="stat_quantity" id="int_stat"></p>
+                <p class="stat_modifier" id="int_mod"></p>
+            </div>  
+            <div class="stat" id="Wis_zone">
+                <p>Wisdom</p>
+                <input id="wis" type="radio" name="mod_box" value="wisdom">
+                <input type="number" min="8" max="20" class="stat_quantity" id="wis_stat"></p>
+                <p class="stat_modifier" id="wis_mod"></p>
+            </div>  
+            <div class="stat" id="Cha_zone">
+                <p>Charisma</p>
+                <input id="cha" type="radio" name="mod_box" value="charisma">
+                <input type="number" min="8" max="20" class="stat_quantity" id="cha_stat"></p>
+                <p class="stat_modifier" id="cha_mod"></p>
+            </div>  
+            <div class="stat" id="Non_zone">
+                <p>None</p>
+                <input id="non" type="radio" name="mod_box" value="none">
+            </div>
+            <!-- Current Work area -->
+
+              
+        </section>
+        </form>
+        <form id="modifiers">
+            <input id="proficiency" name="proficiency" type="checkbox">
+            <lable for="proficiency">Proficiency </lable>    
+            <input id="expertise" name="expertise" type="checkbox">
+            <lable for="expertise">Expertise</lable>    
+            <input type="radio" name="tage" id="Advantage" value="Advantage">
+            <label for="Advantage">Advantage</label>
+            <input type="radio" name="tage" id="Disadvantage" value="Disadvantage">
+            <label for="Disadvantage">Disadvantage</label>
+            <input type="radio" name="tage" id="Neither" value="Neither">
+            <label for="Neither">Neither</label>
+        </form>
+
+
+
+
+        <div id="advanced-roller" class="zone">
+            <div id="d4">
+                <img class="dice" id="d4_img" src="images/d4.png" alt="4 Sided Die" data-sides="4">
+            </div>
+            <div id="d6">
+                <img class="dice" id="d6_img" src="images/d6.png" alt="2 Sided Die" data-sides="6">
+            </div>
+            <div id="d8">
+                <img class="dice" id="d8_img" src="images/d8.png" alt="8 Sided Die" data-sides="8">
+            </div>
+            <div id="d10">
+                <img class="dice" id="d10_img" src="images/d10.png" alt="10 Sided Die" data-sides="10">
+            </div>
+            <div id="d12">
+                <img class="dice" id="d12_img" src="images/d12.png" alt="12 Sided Die" data-sides="12">
+            </div>
+            <div id="d20">
+                <img class="dice" id="d20_img" src="images/d20.png" alt="20 Sided Die" data-sides="20">
+            </div>
+        </div>
+        <div id="result">
+            <label class="text-display" for="rolls">Rolls:</label>
+            <span class="text-display" id="rolls" name="Rolls"></span>
+            <br><p class="text-display" id="crit"></p><br>
+            <label class="text-display" for="sum">Sum:</label>
+            <span class="text-display" id="sum" name="Sum"></span>
+            <br><br>
+
+        </div>
+    <script src="scripts/dice.js"></script>
+</body>
+</html>
