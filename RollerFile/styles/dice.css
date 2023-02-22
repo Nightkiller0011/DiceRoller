@@ -19,7 +19,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    font-size: 50px;
+    font-size: 1em;
 }
 nav a {
     text-align: center;
@@ -98,6 +98,13 @@ h1{
   }
   
   @media screen and (max-width: 775px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
     .stat{
         font-size: 15px;
     }

@@ -33,3 +33,12 @@ nav a:hover {
     background-color:#058ED9;
     color: #3E5622;
 }
+@media screen and (max-width: 775px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+}
