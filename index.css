@@ -16,6 +16,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     background-color:#0D0630;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 nav {
@@ -25,13 +26,21 @@ nav {
 }
 nav a {
     text-align: center;
-    color: #709255;
+    color: #058ED9;
     text-decoration: none;
     padding: 35px;
 }
 nav a:hover {
-    background-color:#058ED9;
-    color: #3E5622;
+    background-color:#3E5622;
+    color: #709255;
+    /*  Colors */
+    /*
+    Dark Blue: 0D0630
+    Light Blue: 058ED9
+    Dark Green: 3E5622
+    Light Green: 709255 
+    Silver: D8DBE2
+    */
 }
 @media screen and (max-width: 775px) {
     nav {
