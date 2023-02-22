@@ -19,7 +19,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    font-size: 1em;
+    font-size: 50px;
 }
 nav a {
     text-align: center;
@@ -32,9 +32,9 @@ nav a:hover {
     color: #3E5622;
 }
 body{
-    background-color: aliceblue;
+    background-color: #D8DBE2;
     margin: 1 auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
     
 }
@@ -100,6 +100,7 @@ h1{
   @media screen and (max-width: 775px) {
     nav {
         flex-direction: column;
+        font-size: 2em;
     }
     nav a {
         display: block;
