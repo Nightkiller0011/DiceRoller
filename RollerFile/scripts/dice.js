@@ -123,31 +123,37 @@ function find_mod(stats){
 
     // Calculate STR Modifier and Display it
     let str = parseInt(document.querySelector("#str_stat").value);
+    if(isNaN(str)){str = 10}
     let str_mod = Math.floor((str - 10)/2)
     document.querySelector("#str_mod").textContent = str_mod
 
     // Calculate DEX Modifier and Display it
     let dex = parseInt(document.querySelector("#dex_stat").value);
+    if(isNaN(dex)){dex = 10}
     let dex_mod = Math.floor((dex - 10)/2)
     document.querySelector("#dex_mod").textContent = dex_mod
 
     // Calculate CON Modifier and Display it
     let con = parseInt(document.querySelector("#con_stat").value);
+    if(isNaN(con)){con = 10}
     let con_mod = Math.floor((con - 10)/2)
     document.querySelector("#con_mod").textContent = con_mod
 
     // Calculate INT Modifier and Display it
     let int = parseInt(document.querySelector("#int_stat").value);
+    if(isNaN(int)){int = 10}
     let int_mod = Math.floor((int - 10)/2)
     document.querySelector("#int_mod").textContent = int_mod
 
     // Calculate WIS Modifier and Display it
     let wis = parseInt(document.querySelector("#wis_stat").value);
+    if(isNaN(wis)){wis = 10}
     let wis_mod = Math.floor((wis - 10)/2)
     document.querySelector("#wis_mod").textContent = wis_mod
 
     // Calculate CHA Modifier and Display it
     let cha = parseInt(document.querySelector("#cha_stat").value);
+    if(isNaN(cha)){cha = 10}
     let cha_mod = Math.floor((cha - 10)/2)
     document.querySelector("#cha_mod").textContent = cha_mod
 

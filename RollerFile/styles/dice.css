@@ -1,3 +1,35 @@
+.link{
+    text-align: center;
+    margin:100px;
+    padding: 10px;
+    border: solid black 4px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+#site_logo{
+    width: 100%;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color:#0D0630;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+}
+nav a {
+    text-align: center;
+    color: #709255;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    background-color:#058ED9;
+    color: #3E5622;
+}
 body{
     background-color: aliceblue;
     margin: 1 auto;
@@ -5,11 +37,11 @@ body{
     color: black;
     
 }
-
 h1{
     text-align: center;
 }
 .question{
+    text-align: center;
     margin: 50px 0px
 }
 #result {
@@ -21,7 +53,7 @@ h1{
 }
 .dice{
     width: 60%;
-    border: solid black .1em;
+    /* border: solid black .1em; */
     margin: 10px;
 }
 .stat{
