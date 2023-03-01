@@ -29,13 +29,13 @@ nav a {
 }
 nav a:hover {
     background-color:#3E5622;
-    color: #709255;
+    color: #83cf45;
     /*  Colors */
     /*
     Dark Blue: 0D0630
     Light Blue: 058ED9
     Dark Green: 3E5622
-    Light Green: 709255 
+    Light Green: 83cf45 
     Silver: D8DBE2
     */
 }
