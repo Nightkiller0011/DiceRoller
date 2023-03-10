@@ -48,6 +48,31 @@ nav a:hover {
     Silver: D8DBE2
     */
 }
+
+footer {
+    background-color:#0D0630;
+    color: #058ED9;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer a {
+    color: #058ED9;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #83cf45;
+    text-decoration: underline;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer .social img {
+    padding-top: 15px;
+}
 @media screen and (max-width: 775px) {
     nav {
         flex-direction: column;

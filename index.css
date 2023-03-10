@@ -42,6 +42,87 @@ nav a:hover {
     Silver: D8DBE2
     */
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#title {
+    text-align: center;
+}
+.text {
+    font-size: 12px;
+}
+#text1 {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+#text2 {
+    grid-column: 5/7;
+    grid-row: 2/4;
+}
+#text3 {
+    grid-column: 2/4;
+    grid-row: 5/7;
+}
+#text4 {
+    grid-column: 5/7;
+    grid-row: 5/7;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.example {
+    width: 100%;
+}
+#example1 {
+    grid-column: 2/4;
+}
+#example2 {
+    grid-column: 5/7;
+}
+#example3 {
+    grid-column: 8/10;
+}
+#example4 {
+    grid-row: 2;
+    grid-column: 3/9;
+}
+h1{ 
+    font-size: 60px;
+}
+h2 {
+    font-size: 25px;
+}
+p {
+    font-size: 20px;
+}
+
+footer {
+    background-color:#0D0630;
+    color: #058ED9;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+footer a {
+    color: #058ED9;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #83cf45;
+    text-decoration: underline;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer .social img {
+    padding-top: 15px;
+}
 @media screen and (max-width: 775px) {
     nav {
         flex-direction: column;
