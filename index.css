@@ -126,6 +126,9 @@ footer p {
 footer .social img {
     padding-top: 15px;
 }
+#discord {
+    width: 65px;
+}
 @media screen and (max-width: 775px) {
     nav {
         flex-direction: column;
