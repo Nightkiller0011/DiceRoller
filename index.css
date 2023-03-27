@@ -13,6 +13,9 @@ body {
 #site_logo{
     width: 100%;
 }
+h2 {
+    color: #058ED9;
+}
 header {
     display: grid;
     grid-template-columns: 150px auto;
